@@ -1,0 +1,190 @@
+\documentclass{resume} % Use the custom resume.cls style]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{bibentry}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{ulem}
+\usepackage{indentfirst}
+\usepackage{geometry}
+\usepackage{paralist}
+\usepackage{enumitem}
+\setenumerate{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setitemize{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setdescription{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\let\itemize\compactitem
+\let\enditemize\endcompactitem
+\let\enumerate\compactenum
+\let\endenumerate\endcompactenum
+\let\description\compactdesc
+\let\enddescription\endcompactdesc
+
+
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=mygreylink     % can put red here to better visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.30}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		#3 & #4 \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\newressubheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{c@{\extracolsep{\fill}}r}	
+%\textbf{{\LARGE Yu Haomiao}}\\
+%\href{mailto:1518948547@qq.com}{1518948547@qq.com}\\
+%\href{http://home.ustc.edu.cn/~ryanyang}{http://home.ustc.edu.cn/$\sim$ryanyang} \\
+\end{tabular*}
+\\
+\vspace{-5pt}}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+%General Resume Tips
+%   No periods!  Technically, nothing in this document is a full sentence.
+%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+%   More tips on bottom of this LaTeX document.
+%-----------------------------------------------------------
+
+
+\geometry{left=1cm,right=1cm,top=1cm,bottom=1cm}
+
+\begin{document} \small
+\begin{spacing}{1}
+\vspace{-0.5in}
+
+\begin{center}
+\begin{tabular}{*{11}{c}}
+    \vspace{-0.5pt}
+    \textbf{\Huge{Dongtai Du}}\\
+    {\footnotesize Apt 951,185 Freeman Street, Brookline, MA02446, US} \\
+    {\footnotesize phone:(857)600-9260} \hspace{1cm} {\footnotesize \url{https://dudongtai2002.github.io}}\hspace{1cm}{\footnotesize \url{Email:dudongtai2002@gmail.com}} \\
+\end{tabular}
+
+\uline{{\bf{\LARGE Education}}\hfill{\hspace{15cm}{}}} \\
+\vspace{1mm}
+{\bf Boston University \hspace{3cm} } \hfill {\hspace{2cm}Aug.2014-May.2016} \\
+\hspace{3cm}
+\hspace{-5.3cm}{M.S. in Computer Engineering(GPA:3.3/4.0):\hspace{0.4cm}Computer Networks, Operating System, Analysis of Algorithms,}\\
+\hspace{5.2cm}{Advanced Data Structure, Cloud Computing, Machine Learning}\\
+{\bf University of Science and Technology of China(USTC) \hspace{1.8cm} } \hfill {Sept.2010-June.2014} \\
+\hspace{-17.2cm}{B.S. in Physics} \hspace{1.66cm}\\
+
+\vspace{3mm}
+\uline{{\bf{\LARGE Technical Skills}}\hfill{\hspace{10cm}{}}} \\
+\vspace{1mm}
+\hspace{-6.0cm}{\bf Languages:} \hspace{2cm} {C, C++,  C\#\ , Java, JavaScript, HTML/ CSS, Python.} \\
+
+
+\hspace{-6cm}{\bf Environment:} \hspace{1.55cm} {Windows32 Desktop, Linux, ASP.NET, Apache Tomcat } \\
+
+\vspace{4mm}
+
+\uline{{\bf{\LARGE Professional Experience}}\hfill{\hspace{10cm}{}}} \\
+\vspace{1mm}
+{\bf Software Development Engineer Intern} \hfill {\small Sogou Inc. Beijing, Dec.2015-Jan.2016} \\
+\vspace{-0mm}
+\begin{itemize}
+\item{Rebuilt a Dynamic Link Library(DLL) for Sogou Pinyin using C++, which could uniquely identify a PC by using MD5 to generate a 16 byte serial number based on hardware information. Greatly reduced the checking error rate and make it applicable in more situations. }\\
+\item{Using TortoiseSVN to manage codes.}\\
+    \hspace{-9mm}\textit{Environment: Windows Desktop development, C++, Visual Studio.}
+\end{itemize}
+{\bf Graduate Teaching Assistant } \hfill {\small Boston University,  Feb.2016-May.2016} \\
+\vspace{-0mm}
+\begin{itemize}
+\item{ Lab assistant \&\ grader for EC512-Enterprise Client/Server Software. C\#\ ,ASP.NET development. Helped answer all the questions from students and set up test case for homework assignments.}\\
+
+\end{itemize}
+\vspace{-1mm}
+\vspace{2.5mm}
+\uline{{\bf{\LARGE Projects}}\hfill{\hspace{10cm}{}}} \\
+\vspace{1mm}	
+{\bf Cloud-Computing - Per-tenant OpenStack Pass-Through Service } \hfill {\small Mar.2015-May.2015} \\
+\vspace{-0mm}
+\begin{itemize}
+\item{Wrote a web application that allows cloud users to seamlessly leverage Openstack services from various providers
+.} \\
+\item{Establish a proxy server between the client and the Openstack Platform on Linux using Python Flask Library.} \\
+
+\hspace{-9mm}\textit{Environment: Linux, Python,  HTML/CSS, OpenStack API, HTTP programming.}
+\vspace{-1mm}
+\end{itemize}
+\vspace{-1mm}
+{\bf Web Developer of User Management System} \hfill {\small  April.2015} \\
+\vspace{-0mm}
+\begin{itemize}
+\item{Using ASP.NET Web Form and C\#\ to develop a full stack website which allows users to register, maintain and modify their own account and check out part of other user’s information.} \\
+\item{Implemented the website's service logic including cookie, session state, database connectivity, security requirement, and authentication of clients.} \\
+\hspace{-9mm}\textit{Environment: C\#\ , ASP.NET, HTML/CSS, SQL server.}
+\vspace{-1mm}
+\end{itemize}
+\vspace{-1mm}
+{\bf An extension of Google Map - MapApp} \hfill {\small  Sep.2015-Dec.2015} \\
+\vspace{-0mm}
+\begin{itemize}
+\item{Using Java and Google Map Api to build a web application on Amazon EC2 Linux Server with a data-set containing 2 million coordinates. It displays a map of US and support range search and nearest neighbor search.} \\
+\item{Implemented K-D Tree based backend in java, reduce time complexity from O(n) to O(lgn).  } \\
+\item{Using JavaScript and JQuery \&\ AJAX to build the application webpage.} \\
+\hspace{-9mm}\textit{Environment: Linux, Apache Tomcat, HTML/CSS, Java, JavaScript, JQuery, AJAX.}
+\vspace{-2mm}
+\end{itemize}
+{\bf Machine Learning - AlFont} \hfill {\small March.2016 - May.2016} \\
+\vspace{-0mm}
+\begin{itemize}
+\item{Wrote two multi-layer convolution neural networks that are able to learn, identify and generate characters in specific font. } \\
+\item{Collect and generate characters as training data using over 10,000 fonts.Train the network using mini-batch gradient descent. } \\
+\item{As the leader of the team, I made plans and held group meetings. } \\
+\hspace{-9mm}\textit{Environment: Python Numpy $\&$ Theano library, Matlab script.}
+\vspace{-1mm}
+\end{itemize}
+
+{\bf Network Simulation and Analysis} \hfill {\small Oct.2015} \\
+\vspace{-0mm}
+\begin{itemize}
+\item{Built a Network Socket using java to support client side and multi-threaded server side talked to each other. } \\
+\item{Using Discrete Event Simulator to simulate and analysis the performance of different transmission and routing algorithm including TCP/IP Go-Back-N(GBN), Select Repeat(SR), and Distance Vector(DV) Routing. } \\
+\hspace{-9mm}\textit{Environment: Netbeans, Java, Socket programming.}
+\vspace{-1mm}
+\end{itemize}
+
+
+\end{center}
+\end{spacing}
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%% 
